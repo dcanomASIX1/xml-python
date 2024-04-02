@@ -134,6 +134,48 @@ exemples per buscar nodes especifics
 
 **/botiga/bluray[position()<6]/titol** indica el títol de les 5 primeres entrades.
 
+### Treballar amb XSLT
+1. Creem un document amb extensio xsl i indiquem el seguent
+`<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+....
+</xsl:stylesheet>`
+Assegurat que els dos docuemtns estiguin a la mateixa carpeta
 
+
+2.Al document **XML** referenciem el document anterior `<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="fitxer.xsl"?>`
+**type** = Indica el tipus de fitxer al qual esta referenciat
+**href** = referencia al nom fitxer de referencia 
+
+#### Element <xsl:template>
+Aquest element s'emplea per crear les plantilles d'XLT
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform ">
+<xsl:template match="/">
+
+Aqui va l'estructura HTML
+
+</xsl:template>
+</xsl:stylesheet>
+
+
+**match** S'emlea per associar l'element arrel de la plantilla a un element del xml original. Es a dir és un element **XPATH**
+
+
+
+#### Element <xsl:value-of>
+S'emplea per extreure els valors d'els elements
+```<td><xsl:value-of select="catalog/cd/title"/></td>```
+
+```<td><xsl:value-of select="catalog/cd/artist"/></td>```
+
+En aquest cas s'extreu el valor text acumulat registrat en **catalog/cd/title** i **catalog/cd/artist**
+
+#### L'element <xsl:for-each>
+Faria la funcio d' un for en un llenguatge de programació es a dir , recorre tots els **elements** del nivell indicat.
 
 
