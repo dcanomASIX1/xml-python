@@ -97,3 +97,11 @@ Existeixen 7 tipus de nodes possibles
 
 ![Captura de pantalla de 2024-04-02 17-29-53](https://github.com/dcanomASIX1/xml-python/assets/165805335/116cfcb4-f9e9-4a3a-b641-31c2267852be)
 
+Aquest tambe te una estructura tipus arbre amb tots els nodes amb un node pare exepte el **Node arrel**
+
+Cada element pot tenir entre 0 o diversos fills 
+
+Els elements amb el mateix pare es consideren germans
+
+![Captura de pantalla de 2024-04-02 17-36-17](https://github.com/dcanomASIX1/xml-python/assets/165805335/e14eae02-20af-474d-8551-6a0a48328024)
+
