@@ -124,7 +124,7 @@ exemples per buscar nodes especifics
 
 **/botiga/*/preu** indica tots els preus dels fills de botiga.
 
-**//*** indica tots els elements del document.
+**//***indica tots els elements del document.
 
 **//titol[@*]** indica tots els elements titol amb qualsevol atribut.
 
