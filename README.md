@@ -103,5 +103,25 @@ Cada element pot tenir entre 0 o diversos fills
 
 Els elements amb el mateix pare es consideren germans
 
-![Captura de pantalla de 2024-04-02 17-36-17](https://github.com/dcanomASIX1/xml-python/assets/165805335/e14eae02-20af-474d-8551-6a0a48328024)
+#### SELECCIO DE NODES
+
+![Captura de pantalla de 2024-04-02 17-38-23](https://github.com/dcanomASIX1/xml-python/assets/165805335/ac07360b-55dd-47b7-a01c-aa05031fe75c)
+
+**Buscar nodes especifics**
+Per filtrar els nodes desitjats emplearem **[]** radera del node que desitgem filtrar en el qual indicamer els elements i quantitats a buscar
+
+exemples per buscar nodes especifics
+
+**/botiga/bluray[1]** indica el primer element bluray.
+**//title[@idioma]** indica els títols amb l’atribut idioma.
+**//title[@idioma=‘cat’]** indica els títols amb l’atribut idioma igual a cat.
+**/botiga/bluray[preu>10]** indica tots els bluray amb preu >10.
+**/botiga/bluray[preu>10]/any** indica tots els anys dels bluray amb preu >10.
+**/botiga/*/preu** indica tots els preus dels fills de botiga.
+**//*** indica tots els elements del document.
+**//titol[@*]** indica tots els elements titol amb qualsevol atribut.
+**//titol | // preu** indica tots els titols i preus del document.
+**/botiga/bluray[2]/titol** indica el títol del segon bluray
+**/botiga/bluray[position()<6]/titol** indica el títol de les 5 primeres entrades.
+
 
