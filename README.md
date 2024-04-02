@@ -190,20 +190,23 @@ Faria la funcio d' un for en un llenguatge de programació es a dir , recorre to
 
 #### L'element <xsl:sort>
 Serveix per ordenar segons un element una agrupacio d'Elements superiors que els contingui 
+
 ![Captura de pantalla de 2024-04-02 20-06-21](https://github.com/dcanomASIX1/xml-python/assets/165805335/17f72932-c86c-4820-b858-0c182cf9c7c7)
 
 
 #### L'element <xsl:if>
 S'emplea despres del for each per posar una condicio al contingut del fitxer XML
+
 ![Captura de pantalla de 2024-04-02 20-06-53](https://github.com/dcanomASIX1/xml-python/assets/165805335/10fcf37c-235c-496d-a7b4-b2261161fd90)
 
 
 #### L'element <xsl:choose>
 S'emplea per poder obtenir una condicio multiple, és a dir diversos if junts depenent del numero de condicions requerides.
+
 ![Captura de pantalla de 2024-04-02 20-07-05](https://github.com/dcanomASIX1/xml-python/assets/165805335/f64e84c4-6ca3-4e4d-b35b-2c3c265467f3)
 
 D'aquest depenenen les funcions  **xsl:when** i **xsl:otherwhise**
-![Captura de pantalla de 2024-04-02 20-07-05](https://github.com/dcanomASIX1/xml-python/assets/165805335/2a6026f9-43ea-45fe-bb46-3077e25c493b)
+
 
 
 en aquest exemple declarem un color en l'artitsa si el preu del disc es superior a 10
