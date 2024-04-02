@@ -177,4 +177,43 @@ En aquest cas s'extreu el valor text acumulat registrat en **catalog/cd/title** 
 #### L'element <xsl:for-each>
 Faria la funcio d' un for en un llenguatge de programació es a dir , recorre tots els **elements** del nivell indicat.
 
+```<xsl:for-each select="catalog/cd[artist='Bob Dylan']">```
+...
+```</xsl:for-each>```
+En aquest exemple recorrem tots els cd que heredin de catalog i el seu artista sigui Bob Dylan
 
+>
+#### L'element <xsl:for-each>
+Faria la funcio d' un for en un llenguatge de programació es a dir , recorre tots els **elements** del nivell indicat.
+![Captura de pantalla de 2024-04-02 20-06-10](https://github.com/dcanomASIX1/xml-python/assets/165805335/6a04211a-c70d-452c-833e-106edcb5deaa)
+
+
+#### L'element <xsl:sort>
+Serveix per ordenar segons un element una agrupacio d'Elements superiors que els contingui 
+![Captura de pantalla de 2024-04-02 20-06-21](https://github.com/dcanomASIX1/xml-python/assets/165805335/17f72932-c86c-4820-b858-0c182cf9c7c7)
+
+
+#### L'element <xsl:if>
+S'emplea despres del for each per posar una condicio al contingut del fitxer XML
+![Captura de pantalla de 2024-04-02 20-06-53](https://github.com/dcanomASIX1/xml-python/assets/165805335/10fcf37c-235c-496d-a7b4-b2261161fd90)
+
+
+#### L'element <xsl:choose>
+S'emplea per poder obtenir una condicio multiple, és a dir diversos if junts depenent del numero de condicions requerides.
+![Captura de pantalla de 2024-04-02 20-07-05](https://github.com/dcanomASIX1/xml-python/assets/165805335/f64e84c4-6ca3-4e4d-b35b-2c3c265467f3)
+
+D'aquest depenenen les funcions  **xsl:when** i **xsl:otherwhise**
+![Captura de pantalla de 2024-04-02 20-07-05](https://github.com/dcanomASIX1/xml-python/assets/165805335/2a6026f9-43ea-45fe-bb46-3077e25c493b)
+
+
+en aquest exemple declarem un color en l'artitsa si el preu del disc es superior a 10
+
+#### Afegir enllaços e imatges
+s'emplea l'atribut **xsl:attribute name="href"** per afegir enllaçps de referencia
+![Captura de pantalla de 2024-04-02 20-10-48](https://github.com/dcanomASIX1/xml-python/assets/165805335/1410fbb1-47cf-47bb-8b84-7a7a345e8e86)
+
+
+s'emplea l'atribut **xsl:attribute name="src"** per afegir enllaçps de referencia
+![Captura de pantalla de 2024-04-02 20-07-27](https://github.com/dcanomASIX1/xml-python/assets/165805335/462803ec-ac63-49c0-9ee5-4d920515fb52)
+
+#### Declarar varables
