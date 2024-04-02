@@ -113,15 +113,27 @@ Per filtrar els nodes desitjats emplearem **[]** radera del node que desitgem fi
 exemples per buscar nodes especifics
 
 **/botiga/bluray[1]** indica el primer element bluray.
+
 **//title[@idioma]** indica els títols amb l’atribut idioma.
+
 **//title[@idioma=‘cat’]** indica els títols amb l’atribut idioma igual a cat.
+
 **/botiga/bluray[preu>10]** indica tots els bluray amb preu >10.
+
 **/botiga/bluray[preu>10]/any** indica tots els anys dels bluray amb preu >10.
+
 **/botiga/*/preu** indica tots els preus dels fills de botiga.
+
 **//*** indica tots els elements del document.
+
 **//titol[@*]** indica tots els elements titol amb qualsevol atribut.
+
 **//titol | // preu** indica tots els titols i preus del document.
+
 **/botiga/bluray[2]/titol** indica el títol del segon bluray
+
 **/botiga/bluray[position()<6]/titol** indica el títol de les 5 primeres entrades.
+
+
 
 
