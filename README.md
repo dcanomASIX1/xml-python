@@ -17,7 +17,8 @@ en aquest cas estariem fen referencia al Primer fill del primer fill del primer 
 Al treballar en DOM exiteixen una gran varietat d'elements als cuals hi podem accedir a la seva enformacio. 
 Aquest es coneixen com **OBJECTES**
 a continuacio una imatge amb tots els objectes amb els que podem interactuar:
-![Captura de pantalla de 2024-04-02 16-35-43](https://hackmd.io/_uploads/SJ2yO9Fy0.png)
+
+![Captura de pantalla de 2024-04-02 16-35-43](https://github.com/dcanomASIX1/xml-python/assets/165805335/eddccb75-0f12-480e-83ca-9efb38e1ad14)
 
 ### Primers pasos
 
