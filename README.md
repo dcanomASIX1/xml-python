@@ -93,6 +93,7 @@ Tingues en compte que es necesita tenir un *processador XSLT* i aprendre *XPATH*
 ### XPATH
 Es un sistema empleat per la seleccio dels nodes
 
-Existeixen 7 tipus de nodes possibles 
+Existeixen 7 tipus de nodes possibles
+
 ![Captura de pantalla de 2024-04-02 17-29-53](https://github.com/dcanomASIX1/xml-python/assets/165805335/116cfcb4-f9e9-4a3a-b641-31c2267852be)
 
