@@ -158,8 +158,8 @@ Aquest element s'emplea per crear les plantilles d'XLT
 
 Aqui va l'estructura HTML
 
-```</xsl:template>
-</xsl:stylesheet>```
+```</xsl:template>```
+```</xsl:stylesheet>```
 
 
 **match** S'emlea per associar l'element arrel de la plantilla a un element del xml original. Es a dir és un element **XPATH**
