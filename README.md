@@ -178,7 +178,9 @@ En aquest cas s'extreu el valor text acumulat registrat en **catalog/cd/title** 
 Faria la funcio d' un for en un llenguatge de programació es a dir , recorre tots els **elements** del nivell indicat.
 
 ```<xsl:for-each select="catalog/cd[artist='Bob Dylan']">```
+
 ...
+
 ```</xsl:for-each>```
 En aquest exemple recorrem tots els cd que heredin de catalog i el seu artista sigui Bob Dylan
 
