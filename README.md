@@ -1,16 +1,16 @@
 #    Documentacio DOM i XSLT/XPATH
 ## DOM
-És un modul de python que permet treballar amb fitxers **XML**
+És un mòdul de python que permet treballar amb fitxers **XML**
 ### Estructura
-L'estructura dels elements quan treballem amb el modul de DOM hereden d'un node anterior fin arribar al node arrel , es a dir es treballa amb una estructura d'arbre on tots els nodes estan conectats a un node anterior exepte el node arrel.
+L'estructura dels elements quan treballem amb el mòdul de DOM hereten d'un node anterior fins arribar al node arrel, és a dir es treballa amb una estructura d'arbre on tots els nodes estan connectats a un node anterior excepte el node arrel.
 
 Aquesta estructura es com la del **XSD**
 
-Per idicar el fill al qual volem accedir empleem **[X]** al costat del element fill indicant el numero al cual volem accedir es a dir
-Doc.chilnodes **[0]** fa referencia al numero (*de la posicio*) del fill on ens ubiquen en aquest moment
+Per indicar el fill al qual volem accedir ocupem **[X]** al costat de l'element fill indicant el número al qual volem accedir es a dir
+Doc.chilnodes **[0]** fa referència al número (*de la posició*) del fill on ens ubiquen en aquest moment.
 
 **ex**
-Doc.chilnodes **[0]** Doc.chilnodes **[0]** Doc.chilnodes **[0]** 
+Doc.chilnodes **[0]** Doc.chilnodes **[0]** Doc.chilnodes **[0]**
 en aquest cas estariem fen referencia al Primer fill del primer fill del primer fill del elemenr **arrel**
 
 ### Objectes en DOM
@@ -24,17 +24,17 @@ a continuacio una imatge amb tots els objectes amb els que podem interactuar:
 
 Ara be un cop coneixem els objectes i com esta estructurat com podem começar a treballar amb aquest modul de pyhton?
 
-1. Comencem important el modul de dom amb la seguent linea de codi:
+1. Comencem important el mòdul de dom amb la següent línia de codi:
 `from xml.dom import minidom `
-2. Indiquem el document **XML**amb el qual importarem dades i treballarem 
+2. Indiquem el document **XML**amb el qual importarem dades i treballarem
  `personas=doc.getElementsByTagName("person") `
-Cal tenir en compte que per poder accedir al document , cal esta ubicat en la terminal on executem en la mateixa capeta del arxiu **XML** indicat
+Cal tenir en compte que per poder accedir al document, cal ester ubicat en la terminal on executem en la mateixa capeta de l'arxiu **XML** indicat.
 
-3. Obrim en mode d'escriptura un nou arxiu en el qual mes endevant escriurem les dades desitjades
+3. Obrim en mode d'escriptura un nou arxiu en el qual més endavant escriurem les dades desitjades
 `f_=open("HTML_ACT6", "w")`
 - **f_** --> És el nom de la variable del nou arxiu creat
-- **HTML_ACT6** --> És el nom amb el cual es crearà l'arxiu, pots posar el que desitgis 
-- **w** --> Indica que l'arxiu s'obrira en opcio d' escriptura
+- **HTML_ACT6** --> És el nom amb el qual es crearà l'arxiu, pots posar el que desitgis
+- **w** --> Indica que l'arxiu s'obrirà en opció d'escriptura
 
 
 4. Indiquem l'element a escriure amb la funcio f_.write(*Aqui indiquem l'element que desitgem escriure*)
@@ -49,13 +49,13 @@ Cal tenir en compte que per poder accedir al document , cal esta ubicat en la te
 - **getElementsByTagName** t'agrupta tots els elements amb el mateix nom.**Pots buscar per altres indicadors, però l'aplicacio és emblant**
 - Per agafar el text, indiques el fill que desitgis i **.firstChild.data**
 `getElementsByTagName("name")[0].firstChild.data`
-- Si vols agafar l'atribut emplees **getAttribute** despres del firstChild
+- Si vols agafar l'atribut emplees **getAttribute** després del firstChild
 `getElementsByTagName("name")[0].firstChild.data`
 
   
 #### **Important**
 
-has de tenir en compte que el que enmagatzemes a la variable són totes les etiquetes (i la informacio dintre d'aquestes) amb el nom indicat, filles de la variable a la qual aplique el **getElementByTagNAme**
+has de tenir en compte que el que emmagatzemes a la variable són totes les etiquetes (i la informació dintre d'aquestes) amb el nom indicat, filles de la variable a la qual apliqui el **getElementByTagNAme**
 
 **ex**
 
@@ -63,9 +63,9 @@ has de tenir en compte que el que enmagatzemes a la variable són totes les etiq
 
 ```dia=doc.getElementsByTagName("dia")```
 
-* Començem guardant la informacio del arxiu **horari.xml* a una variable anomenada **doc**, per tant aquesta actuara com la etiqueta arrel o primer pare.
+* Comencem guardant la informació del arxiu **horari.xml* a una variable anomenada **doc**, per tant, aquesta actuarà com l'etiqueta arrel o primer pare.
   
-* En aquest cas estas guardant a la variable **dia** totes les etiquetes amb nom dia, filles de l'etiqueta arrel 
+* En aquest cas estàs guardant a la variable **dia** totes les etiquetes amb nom dia, filles de l'etiqueta arrel
   
 
 - Per veure totes les implementacion d'objectes visita la seguent pagina: https://docs.python.org/3/library/xml.dom.html
