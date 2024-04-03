@@ -174,21 +174,14 @@ S'emplea per extreure els valors d'els elements
 
 En aquest cas s'extreu el valor text acumulat registrat en **catalog/cd/title** i **catalog/cd/artist**
 
-#### L'element <xsl:for-each>
-Faria la funcio d' un for en un llenguatge de programació es a dir , recorre tots els **elements** del nivell indicat.
 
-```<xsl:for-each select="catalog/cd[artist='Bob Dylan']">```
 
-...
 
-```</xsl:for-each>```
-En aquest exemple recorrem tots els cd que heredin de catalog i el seu artista sigui Bob Dylan
 
->
 #### L'element <xsl:for-each>
 Faria la funcio d' un for en un llenguatge de programació es a dir , recorre tots els **elements** del nivell indicat.
 ![Captura de pantalla de 2024-04-02 20-06-10](https://github.com/dcanomASIX1/xml-python/assets/165805335/6a04211a-c70d-452c-833e-106edcb5deaa)
-
+En aquest exemple recorrem tots els cd que heredin de catalog i el seu artista sigui Bob Dylan
 
 #### L'element <xsl:sort>
 Serveix per ordenar segons un element una agrupacio d'Elements superiors que els contingui 
