@@ -170,7 +170,7 @@ Aquest element s'emplea per crear les plantilles d'XLT
 ```</xsl:stylesheet>```
 
 
-**match** S'emlea per associar l'element arrel de la plantilla a un element del xml original. Es a dir és un element **XPATH**
+* **match** S'emlea per associar l'element arrel de la plantilla a un element del xml original. Es a dir és un element **XPATH**
 
 **Exemple de com acabaria**
 
@@ -179,6 +179,7 @@ Aquest element s'emplea per crear les plantilles d'XLT
 
 #### Element <xsl:value-of>
 S'emplea per extreure els valors d'els elements
+
 ```<td><xsl:value-of select="catalog/cd/title"/></td>```
 
 ```<td><xsl:value-of select="catalog/cd/artist"/></td>```
