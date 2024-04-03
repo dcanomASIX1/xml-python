@@ -124,6 +124,10 @@ f_.write('''</body>
 ### Introduccio XSLT
 XSLT és un llenguatge que s'emplea per transformar ditxers XML en fitxer d'aletres tipus com podes HTML , text o d'altres com tambe es pot convertir en altre tipus d'XML. **En aquest cas aprendrem a transformar en HTML**. 
 Tingues en compte que es necesita tenir un *processador XSLT* i aprendre *XPATH*
+
+![Captura de pantalla de 2024-04-03 17-44-09](https://github.com/dcanomASIX1/xml-python/assets/165805335/3b39e80f-2a5b-42fe-aa54-d74a7e69385e)
+
+
 ### XPATH
 Es un sistema empleat per la seleccio dels nodes
 
