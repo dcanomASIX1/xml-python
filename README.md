@@ -60,6 +60,7 @@ has de tenir en compte que el que enmagatzemes a la variable són totes les etiq
 **ex**
 
 ```doc = minidom.parse("horari.xml")```
+
 ```dia=doc.getElementsByTagName("dia")```
 
 * Començem guardant la informacio del arxiu **horari.xml* a una variable anomenada **doc**, per tant aquesta actuara com la etiqueta arrel o primer pare.
