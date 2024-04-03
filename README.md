@@ -39,7 +39,7 @@ Cal tenir en compte que per poder accedir al document , cal esta ubicat en la te
 
 4. Indiquem l'element a escriure amb la funcio f_.write(*Aqui indiquem l'element que desitgem escriure*)
 
-### Petits truquets a l'hora d'Implementacio d'O bjectes
+### Petits truquets a l'hora d'Implementacio d'Objectes
 - Quan desitgis obtenir un element pel nom pots emplear **getElementsByTagName("name")[0]**
 **name** --> fa referencia al nom que destgis indicar 
 **0** --> Fa referencia a la posocio que desitgis agafar d'aquest fill
