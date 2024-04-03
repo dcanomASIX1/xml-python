@@ -24,7 +24,7 @@ a continuacio una imatge amb tots els objectes amb els que podem interactuar:
 
 Ara be un cop coneixem els objectes i com esta estructurat com podem começar a treballar amb aquest modul de pyhton?
 
-1. Cmençem important el modul de dom amb la seguent linea de codi:
+1. Comencem important el modul de dom amb la seguent linea de codi:
 `from xml.dom import minidom `
 2. Indiquem el document **XML**amb el qual importarem dades i treballarem 
  `personas=doc.getElementsByTagName("person") `
@@ -53,7 +53,7 @@ Cal tenir en compte que per poder accedir al document , cal esta ubicat en la te
 `getElementsByTagName("name")[0].firstChild.data`
 
   
-#### **Importatnt**
+#### **Important**
 
 has de tenir en compte que el que enmagatzemes a la variable són totes les etiquetes (i la informacio dintre d'aquestes) amb el nom indicat, filles de la variable a la qual aplique el **getElementByTagNAme**
 
