@@ -231,7 +231,7 @@ per emplear les variables les cridarem de la seguen forma: [$i]. On **i** repres
 si desitges aprofundir mes pots visitar: https://www.w3schools.com/xml/xsl_intro.asp
 
 #### Exemple de codi XSLT
-`<?xml version="1.0" encoding="UTF-8"?>
+```<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:template match="/">
@@ -303,4 +303,4 @@ si desitges aprofundir mes pots visitar: https://www.w3schools.com/xml/xsl_intro
   </html>
 </xsl:template>
 
-</xsl:stylesheet>`
+</xsl:stylesheet>```
