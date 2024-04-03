@@ -75,6 +75,7 @@ has de tenir en compte que el que enmagatzemes a la variable són totes les etiq
 ### Implementacio del bucle FOR
 Usualment cuant volguem enmagatzemar diverses dates diferents d'un mateix pare emplearem un bucle **FOR* en el qual a la variable que recorres enmagatzemes la informacio desitjada en forma de llista  y amb la variable x recorres aquesta llista
 
+
 **ex**
 
 ```
