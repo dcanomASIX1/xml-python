@@ -43,8 +43,17 @@ Cal tenir en compte que per poder accedir al document , cal esta ubicat en la te
 - Quan desitgis obtenir un element pel nom pots emplear **getElementsByTagName("name")[0]**
 **name** --> fa referencia al nom que destgis indicar 
 **0** --> Fa referencia a la posocio que desitgis agafar d'aquest fill
+
+- **Compte** amb eredar pel nom, Ja que agafaras tots els elements per el nom. Si desitges filtrar pots indicar l'element anterior i despres eredar el que desitgis
+`Colores = doc.getElementsByTagName("colors")[0].getElementsByTagName("assignatura")`
+- **getElementsByTagName** t'agrupta tots els elements amb el mateix nom.**Pots buscar per altres indicadors, però l'aplicacio és emblant**
+- Per agafar el text, indiques el fill que desitgis i **.firstChild.data**
+`getElementsByTagName("name")[0].firstChild.data`
+- Si vols agafar l'atribut emplees **getAttribute** despres del firstChild
+`getElementsByTagName("name")[0].firstChild.data`
+
   
-####**Importatnt**
+#### **Importatnt**
 
 has de tenir en compte que el que enmagatzemes a la variable són totes les etiquetes (i la informacio dintre d'aquestes) amb el nom indicat, filles de la variable a la qual aplique el **getElementByTagNAme**
 
@@ -54,13 +63,7 @@ has de tenir en compte que el que enmagatzemes a la variable són totes les etiq
 ```dia=doc.getElementsByTagName("dia")```
 * En aquest cas estas guardant a la variable **dia** totes les etiquetes amb nom dia, filles de l'etiqueta arrel 
   
-- **Compte** amb eredar pel nom, Ja que agafaras tots els elements per el nom. Si desitges filtrar pots indicar l'element anterior i despres eredar el que desitgis
-`Colores = doc.getElementsByTagName("colors")[0].getElementsByTagName("assignatura")`
-- **getElementsByTagName** t'agrupta tots els elements amb el mateix nom.**Pots buscar per altres indicadors, però l'aplicacio és emblant**
-- Per agafar el text, indiques el fill que desitgis i **.firstChild.data**
-`getElementsByTagName("name")[0].firstChild.data`
-- Si vols agafar l'atribut emplees **getAttribute** despres del firstChild
-`getElementsByTagName("name")[0].firstChild.data`
+
 - Per veure totes les implementacion d'objectes visita la seguent pagina: https://docs.python.org/3/library/xml.dom.html
 
 
