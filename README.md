@@ -142,8 +142,9 @@ exemples per buscar nodes especifics
 </xsl:stylesheet>`
 Assegurat que els dos docuemtns estiguin a la mateixa carpeta
 
-2.Al document **XML** referenciem el document anterior ```<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="fitxer.xsl"?>```
+2.Al document **XML** referenciem el document anterior
+```<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-stylesheet type="text/xsl" href="fitxer.xsl"?>```
 **type** = Indica el tipus de fitxer al qual esta referenciat
 **href** = referencia al nom fitxer de referencia 
 
