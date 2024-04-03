@@ -164,7 +164,8 @@ Aqui va l'estructura HTML
 
 **match** S'emlea per associar l'element arrel de la plantilla a un element del xml original. Es a dir és un element **XPATH**
 
-
+**Exemple de com acabaria**
+<img width="332" alt="Captura3" src="https://github.com/dcanomASIX1/xml-python/assets/165805335/f350364c-782e-44b1-bab1-5bada4b3c91c">
 
 #### Element <xsl:value-of>
 S'emplea per extreure els valors d'els elements
@@ -222,3 +223,6 @@ Per crear noves variables amb les vuals treballar emplearem la seguent linea de 
 ```<xsl:variable name="i" select="position()"/>```
 **name** indica el nom de la variable
 **select** el tipus de la variable a eeplear
+
+
+si desitges aprofundir mes pots visitar: https://www.w3schools.com/xml/xsl_intro.asp
