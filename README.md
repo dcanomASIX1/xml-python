@@ -10,6 +10,7 @@ Per indicar el fill al qual volem accedir ocupem **[X]** al costat de l'element 
 Doc.chilnodes **[0]** fa referència al número (*de la posició*) del fill on ens ubiquen en aquest moment.
 
 **ex**
+
 Doc.chilnodes **[0]** Doc.chilnodes **[0]** Doc.chilnodes **[0]**
 en aquest cas estariem fen referencia al Primer fill del primer fill del primer fill del elemenr **arrel**
 
@@ -41,10 +42,10 @@ Cal tenir en compte que per poder accedir al document, cal ester ubicat en la te
 
 ### Petits truquets a l'hora d'Implementacio d'Objectes
 - Quan desitgis obtenir un element pel nom pots emplear **getElementsByTagName("name")[0]**
-**name** --> fa referencia al nom que destgis indicar 
-**0** --> Fa referencia a la posocio que desitgis agafar d'aquest fill
+**name** --> fa referència al nom que desitgis indicar
+**0** -->  Fa referència a la posició que desitgis agafar d'aquest fill
 
-- **Compte** amb eredar pel nom, Ja que agafaras tots els elements per el nom. Si desitges filtrar pots indicar l'element anterior i despres eredar el que desitgis
+- **Compte**  amb eredar pel nom, ja que agafaràs tots els elements pel nom. Si desitges filtrar pots indicar l'element anterior i després eredar el que desitgis
 `Colores = doc.getElementsByTagName("colors")[0].getElementsByTagName("assignatura")`
 - **getElementsByTagName** t'agrupta tots els elements amb el mateix nom.**Pots buscar per altres indicadors, però l'aplicacio és emblant**
 - Per agafar el text, indiques el fill que desitgis i **.firstChild.data**
@@ -68,12 +69,12 @@ has de tenir en compte que el que emmagatzemes a la variable són totes les etiq
 * En aquest cas estàs guardant a la variable **dia** totes les etiquetes amb nom dia, filles de l'etiqueta arrel
   
 
-- Per veure totes les implementacion d'objectes visita la seguent pagina: https://docs.python.org/3/library/xml.dom.html
+- Per veure totes les implementació d'objectes visita la següent pàgina: https://docs.python.org/3/library/xml.dom.html
 
 
 
 ### Implementacio del bucle FOR
-Usualment cuant volguem enmagatzemar diverses dates diferents d'un mateix pare emplearem un bucle **FOR* en el qual a la variable que recorres enmagatzemes la informacio desitjada en forma de llista  y amb la variable x recorres aquesta llista
+Usualment quant vulguem emmagatzemar diverses dates diferents d'un mateix pare emprarem un bucle **FOR* en el qual a la variable que recorres emmagatzemes la informació desitjada en forma de llista i amb la variable x recorres aquesta llista
 
 
 **ex**
@@ -122,22 +123,23 @@ f_.write('''</body>
 
 ## XSLT i XPATH
 ### Introduccio XSLT
-XSLT és un llenguatge que s'emplea per transformar ditxers XML en fitxer d'aletres tipus com podes HTML , text o d'altres com tambe es pot convertir en altre tipus d'XML. **En aquest cas aprendrem a transformar en HTML**. 
-Tingues en compte que es necesita tenir un *processador XSLT* i aprendre *XPATH*
+XSLT és un llenguatge que s'empra per transformar fitxers XML en fitxer d'altres tipus com pot eser  HTML, text o d'altres com també es pot convertir en altre tipus d'XML. **En aquest cas aprendrem a transformar en HTML**.
+Tingues en compte que es necessita tenir un *processador XSLT* i aprendre *XPATH*
 
 ![Captura de pantalla de 2024-04-03 17-44-09](https://github.com/dcanomASIX1/xml-python/assets/165805335/3b39e80f-2a5b-42fe-aa54-d74a7e69385e)
 
 
 ### XPATH
-Es un sistema empleat per la seleccio dels nodes
+És un sistema, empleat per la selecció dels nodes
 
 Existeixen 7 tipus de nodes possibles
 
+
 ![Captura de pantalla de 2024-04-02 17-29-53](https://github.com/dcanomASIX1/xml-python/assets/165805335/116cfcb4-f9e9-4a3a-b641-31c2267852be)
 
-Aquest tambe te una estructura tipus arbre amb tots els nodes amb un node pare exepte el **Node arrel**
+Aquest també té una estructura tipus arbre amb tots els nodes amb un node pare excepte el **Node arrel**
 
-Cada element pot tenir entre 0 o diversos fills 
+Cada element pot tenir entre 0 o diversos fills
 
 Els elements amb el mateix pare es consideren germans
 
@@ -173,7 +175,7 @@ exemples per buscar nodes especifics
 **/botiga/bluray[position()<6]/titol** indica el títol de les 5 primeres entrades.
 
 ### Treballar amb XSLT
-1. Creem un document amb extensio xsl i indiquem el seguent
+1. Creem un document amb extensió xsl i indiquem el següent
 `<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 ....
@@ -186,9 +188,9 @@ Assegurat que els dos docuemtns estiguin a la mateixa carpeta
 
 ```<?xml-stylesheet type="text/xsl" href="fitxer.xsl"?>```
     
-* **type** = Indica el tipus de fitxer al qual esta referenciat
+* **type** = Indica el tipus de fitxer al qual està referenciat
 
-* **href** = referencia al nom fitxer de referencia 
+* **href** = referència al nom fitxer de referència
 
 #### Element <xsl:template>
 Aquest element s'emplea per crear les plantilles d'XLT
@@ -208,8 +210,8 @@ Aquest element s'emplea per crear les plantilles d'XLT
 ```</xsl:stylesheet>```
 
 
-* **match** S'emlea per associar l'element arrel de la plantilla a un element del xml original. Es a dir és un element **XPATH**
-
+* **match**  S'emplea per associar l'element, arrel de la plantilla a un element de l'xml original. És a dir és un element **XPATH**
+* 
 **Exemple de com acabaria**
 
 
@@ -229,7 +231,7 @@ En aquest cas s'extreu el valor text acumulat registrat en **catalog/cd/title** 
 
 
 #### L'element <xsl:for-each>
-Faria la funcio d' un for en un llenguatge de programació es a dir , recorre tots els **elements** del nivell indicat.
+Faria la funció d'un for en un llenguatge de programació és a dir, recorre tots els **elements** del nivell indicat.
 
 ![Captura de pantalla de 2024-04-02 20-06-10](https://github.com/dcanomASIX1/xml-python/assets/165805335/6a04211a-c70d-452c-833e-106edcb5deaa)
 
@@ -242,13 +244,13 @@ Serveix per ordenar segons un element una agrupacio d'Elements superiors que els
 
 
 #### L'element <xsl:if>
-S'emplea despres del for each per posar una condicio al contingut del fitxer XML
+S'ocupa després del for each per posar una condició al contingut del fitxer XML
 
 ![Captura de pantalla de 2024-04-02 20-06-53](https://github.com/dcanomASIX1/xml-python/assets/165805335/10fcf37c-235c-496d-a7b4-b2261161fd90)
 
 
 #### L'element <xsl:choose>
-S'emplea per poder obtenir una condicio multiple, és a dir diversos if junts depenent del numero de condicions requerides.
+S'ocupa per poder obtenir una condició múltiple, és a dir diversos if junts depenent del número de condicions requerides.
 
 ![Captura de pantalla de 2024-04-02 20-07-05](https://github.com/dcanomASIX1/xml-python/assets/165805335/f64e84c4-6ca3-4e4d-b35b-2c3c265467f3)
 
