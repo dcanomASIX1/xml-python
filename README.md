@@ -77,11 +77,13 @@ Usualment cuant volguem enmagatzemar diverses dates diferents d'un mateix pare e
 
 **ex**
 
-```for x in Colores:
+```
+for x in Colores:
     ColorAssignatura = x.firstChild.data
     AtributoColor= x.getAttribute("color")
     print(f'''{AtributoColor} {ColorAssignatura}''')
-    DiccionarioColores[ColorAssignatura]= AtributoColor```
+    DiccionarioColores[ColorAssignatura]= AtributoColor
+```
 
 
 ### Exemple d'implementacio en un codi "simple"
