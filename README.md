@@ -43,7 +43,16 @@ Cal tenir en compte que per poder accedir al document , cal esta ubicat en la te
 - Quan desitgis obtenir un element pel nom pots emplear **getElementsByTagName("name")[0]**
 **name** --> fa referencia al nom que destgis indicar 
 **0** --> Fa referencia a la posocio que desitgis agafar d'aquest fill
+  
+**Importatnt**
+has de tenir en compte que el que enmagatzemes a la variable són totes les etiquetes (i la informacio dintre d'aquestes) amb el nom indicat, filles de la variable a la qual aplique el **getElementByTagNAme**
 
+**ex**
+```doc = minidom.parse("horari.xml")```
+* Començem guardant la informacio del arxiu **horari.xml* a una variable anomenada **doc**, per tant aquesta actuara com la etiqueta arrel o primer pare.
+```dia=doc.getElementsByTagName("dia")```
+* En aquest cas estas guardant a la variable **dia** totes les etiquetes amb nom dia, filles de l'etiqueta arrel 
+  
 - Compte amb eredar pel nom, Ja que agafaras tots els elements per el nom. Si desitges filtrar pots indicar e¡l'element anterior i despres eredar el que desitgis
 `Colores = doc.getElementsByTagName("colors")[0].getElementsByTagName("assignatura")`
 - **getElementsByTagName** t'agrupta tots els elements amb el mateix nom.**Pots buscar per altres indicadors, però l'aplicacio és emblant**
@@ -52,6 +61,19 @@ Cal tenir en compte que per poder accedir al document , cal esta ubicat en la te
 - Si vols agafar l'atribut emplees **getAttribute** despres del firstChild
 `getElementsByTagName("name")[0].firstChild.data`
 - Per veure totes les implementacion d'objectes visita la seguent pagina: https://docs.python.org/3/library/xml.dom.html
+
+
+
+### Implementacio del bucle FOR
+Usualment cuant volguem enmagatzemar diverses dates diferents d'un mateix pare emplearem un bucle **FOR* en el qual a la variable que recorres enmagatzemes la informacio desitjada en forma de llista  y amb la variable x recorres aquesta llista
+**ex**
+
+```for x in Colores:
+    ColorAssignatura = x.firstChild.data
+    AtributoColor= x.getAttribute("color")
+    print(f'''{AtributoColor} {ColorAssignatura}''')
+    DiccionarioColores[ColorAssignatura]= AtributoColor```
+
 
 ### Exemple d'implementacio en un codi "simple"
 ```
