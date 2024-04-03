@@ -237,8 +237,11 @@ Per crear noves variables amb les vuals treballar emplearem la seguent linea de 
 **name** indica el nom de la variable
 **select** el tipus de la variable a eeplear
 
-per emplear les variables les cridarem de la seguen forma: [$i]. On **i** representa el nom de la varaible
+per emplear les variables les cridarem de la seguen forma: [$i].
+On **i** representa el nom de la varaible
+
 **ej**
+
 ```<xsl:variable name="color" select="/horari/colors/color[@codi=current()/modul[$i]/codi]"/>```
 
 si desitges aprofundir mes pots visitar: https://www.w3schools.com/xml/xsl_intro.asp
