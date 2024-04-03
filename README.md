@@ -268,7 +268,7 @@ s'emplea l'atribut **xsl:attribute name="src"** per afegir imatges
 
 ![Captura de pantalla de 2024-04-02 20-07-27](https://github.com/dcanomASIX1/xml-python/assets/165805335/462803ec-ac63-49c0-9ee5-4d920515fb52)
 
-#### Declarar varables
+#### Declarar variables
 
 Per crear noves variables amb les vuals treballar emplearem la seguent linea de codi 
 ```<xsl:variable name="i" select="position()"/>```
@@ -278,7 +278,7 @@ Per crear noves variables amb les vuals treballar emplearem la seguent linea de 
 per emplear les variables les cridarem de la seguen forma: [$i].
 On **i** representa el nom de la varaible
 
-**ej**
+**ex**
 
 ```<xsl:variable name="color" select="/horari/colors/color[@codi=current()/modul[$i]/codi]"/>```
 
