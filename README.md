@@ -143,10 +143,14 @@ exemples per buscar nodes especifics
 Assegurat que els dos docuemtns estiguin a la mateixa carpeta
 
 2.Al document **XML** referenciem el document anterior
+
 ```<?xml version="1.0" encoding="UTF-8"?>```
-    ```<?xml-stylesheet type="text/xsl" href="fitxer.xsl"?>```
-**type** = Indica el tipus de fitxer al qual esta referenciat
-**href** = referencia al nom fitxer de referencia 
+
+```<?xml-stylesheet type="text/xsl" href="fitxer.xsl"?>```
+    
+* **type** = Indica el tipus de fitxer al qual esta referenciat
+
+* **href** = referencia al nom fitxer de referencia 
 
 #### Element <xsl:template>
 Aquest element s'emplea per crear les plantilles d'XLT
@@ -154,12 +158,15 @@ Aquest element s'emplea per crear les plantilles d'XLT
 
 
 ```<?xml version="1.0" encoding="UTF-8"?>```
+
 ```<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform ">```
+
 ```<xsl:template match="/">```
 
-Aqui va l'estructura HTML
+*Aqui va l'estructura HTML*
 
 ```</xsl:template>```
+
 ```</xsl:stylesheet>```
 
 
