@@ -58,9 +58,12 @@ Cal tenir en compte que per poder accedir al document , cal esta ubicat en la te
 has de tenir en compte que el que enmagatzemes a la variable són totes les etiquetes (i la informacio dintre d'aquestes) amb el nom indicat, filles de la variable a la qual aplique el **getElementByTagNAme**
 
 **ex**
+
 ```doc = minidom.parse("horari.xml")```
-* Començem guardant la informacio del arxiu **horari.xml* a una variable anomenada **doc**, per tant aquesta actuara com la etiqueta arrel o primer pare.
 ```dia=doc.getElementsByTagName("dia")```
+
+* Començem guardant la informacio del arxiu **horari.xml* a una variable anomenada **doc**, per tant aquesta actuara com la etiqueta arrel o primer pare.
+  
 * En aquest cas estas guardant a la variable **dia** totes les etiquetes amb nom dia, filles de l'etiqueta arrel 
   
 
