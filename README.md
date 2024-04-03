@@ -165,6 +165,8 @@ Aqui va l'estructura HTML
 **match** S'emlea per associar l'element arrel de la plantilla a un element del xml original. Es a dir és un element **XPATH**
 
 **Exemple de com acabaria**
+
+
 <img width="332" alt="Captura3" src="https://github.com/dcanomASIX1/xml-python/assets/165805335/f350364c-782e-44b1-bab1-5bada4b3c91c">
 
 #### Element <xsl:value-of>
