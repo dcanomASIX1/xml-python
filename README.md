@@ -89,7 +89,7 @@ for x in Colores:
 
 
 ### Exemple d'implementacio en un codi "simple"
-```
+```python
 from xml.dom import minidom 
 doc=minidom.parse("111.xml")
 
